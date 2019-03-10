@@ -19,7 +19,7 @@ class mainApp(QMainWindow,ui):
         self.setupUi(self)
         self.handle_Widgets()
         self.setWindowIcon(QIcon("UI/icon.png"))
-        with open("style.css",'r') as f:
+        with open("UI/style.css",'r') as f:
             self.setStyleSheet(f.read())
     def menu(self):
         self.actionDevloper.triggered.connect(lambda:self.dev.show())
